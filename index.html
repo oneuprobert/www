@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
 
+    <script src="https://unpkg.com/vanilla-counter"></script>
+
   </head>
   
   <body oncontextmenu="return false;">
@@ -66,7 +68,7 @@
         <div class="row space-100">
           <div class="col-lg-6 col-md-12 col-xs-12">
             <div class="contents">
-              <h2 class="head-title">Your web engeneers <br>Samen groeien.</h2>
+              <h2 class="head-title">YourWeb-Engineers <br>Samen groeien.</h2>
               <p>Lorem ipsum dol lorem15 or sit amet, consectetur adipisicing elit. Ab <br>dolores ea fugiat nesciunt quisquam.</p>
               <div class="header-button">
                 <a href="#" class="btn btn-border-filled">Begin</a>
@@ -190,12 +192,19 @@
              <!-- Start Fetatures -->
             <div class="feature-item featured-border1">
                <div class="feature-icon float-left">
-                <span style="margin-top: 20px;">80%</span>
+                <span id="classcounter" data-vanilla-counter 
+                      data-start-at="0" 
+                      data-end-at="88"
+                      data-format="{}%"
+                      data-time="3000">
+                      
+                      {}
+                </span>
                </div>
                <script>VanillaCounter();</script>
                <div class="feature-info float-left">
-                 <h4>Lorem, ipsum.</h4>
-                 <p>Producing long lasting organic SEO results for <br> brand of different kinds for more than a decade,<br> we understand that’s your.</p>
+                 <h4 style="font-size: 24px;">88%</h4>
+                 <p>Van de mensen online<br> zoekt naar product of service-informatie voordat<br> zij overgaan op aankoop online of in de winkel.</p>
                </div>
             </div>
             <!-- End Fetatures -->
@@ -326,7 +335,7 @@
                 </ul>
               </div>
               <div class="plan-button">
-                <a href="#" class="btn btn-border">Bestel!</a>
+                <a href="#contact" class="btn btn-border nav-link page-scroll">Bestel!</a>
               </div>
             </div>
           </div>
@@ -347,7 +356,7 @@
                 </ul>
               </div>
               <div class="plan-button">
-                <a href="#" class="btn btn-common">Bestel!</a>
+                <a href="#contact" class="btn btn-common nav-link page-scroll">Bestel!</a>
               </div>
             </div>
           </div>
@@ -366,7 +375,7 @@
                 </ul>
               </div>
               <div class="plan-button">
-                <a href="#" class="btn btn-border">Bestel!</a>
+                <a href="#contact" class="btn btn-border nav-link page-scroll">Bestel!</a>
               </div>
             </div>
           </div>
@@ -418,6 +427,21 @@
                   <div class="help-block with-errors"></div>
                 </div> 
               </div>
+
+              <div class="col-md-6">
+                <div class="input-group md-6"> 
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Pakket</label>
+                  </div>
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Kies...</option>
+                    <option value="1">Basic</option>
+                    <option value="2">Advanced</option>
+                    <option value="3">Business</option>
+                  </select>
+                </div>
+              </div>
+
               <div class="col-md-6">
                 <div class="form-group">
                   <input type="text" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
@@ -509,9 +533,9 @@
                   <h3 class="block-title">Volg ons op socials!</h3>
                   <ul class="menu">
                     
-                    <li><a href=""><i class="lni lni-facebook-original" style="font-size: 16px;"></i></a>
-                    <a href=""><i class="lni lni-instagram-filled" style="font-size: 16px;"></i></a>
-                    <a href="#"> <i class="lni lni-linkedin-original" style="font-size: 16px;"></i></a></li>
+                    <li><a href=""><i class="lni lni-facebook-original" style="font-size: 32px;"></i></a>
+                    <a href=""><i class="lni lni-instagram-filled" style="font-size: 32px;"></i></a>
+                    <a href="#"> <i class="lni lni-linkedin-original" style="font-size: 32px;"></i></a></li>
 
                   </ul>
                 </div>
@@ -531,7 +555,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="site-info text-center">
-                  <p>Copyright <a href="#" rel="nofollow">YWE</a> 2021</p>
+                  <p>Copyright <a href="#" rel="nofollow">YourWeb-Engineers</a> 2021</p>
                 </div>              
                 
               </div>
@@ -570,7 +594,9 @@
     <script src="js/nivo-lightbox.js"></script>     
     <script src="js/jquery.magnific-popup.min.js"></script>      
     <script src="js/main.js"></script>
-    <script src="vanilla-counter.js"></script>
+    <script>
+      VanillaCounter();
+  </script>
     <script src="js/nocap.js"></script>
     
   </body>
